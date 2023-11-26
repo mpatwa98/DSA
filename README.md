@@ -19,3 +19,7 @@
 2. Print Nodes in Top View of Binary Tree
 3. Vertical Order Traversal of a Binary Tree
 4. Diameter of Binary Tree
+
+# Binary Search Tree
+
+1. Find Mode in Binary Search Tree

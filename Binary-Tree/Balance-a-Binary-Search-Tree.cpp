@@ -17,14 +17,14 @@ class Solution
   vector<TreeNode *> sorted;
 
 public:
-  void inorder(TreeNode *root)
+  void inOrder(TreeNode *root)
   {
     if (root == NULL)
       return;
 
-    inorder(root->left);
+    inOrder(root->left);
     sorted.push_back(root);
-    inorder(root->right);
+    inOrder(root->right);
   }
 
   TreeNode *createTree(int start, int end)
@@ -40,7 +40,7 @@ public:
   }
   TreeNode *balanceBST(TreeNode *root)
   {
-    inorder(root);
+    inOrder(root);
     return createTree(0, sorted.size() - 1);
   }
 };
